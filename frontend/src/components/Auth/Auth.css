@@ -1,0 +1,42 @@
+.authentication__header {
+  color: white;
+  text-align: center;
+}
+
+.authentication {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.authentication form {
+  margin-bottom: 1rem;
+}
+
+.resetP {
+  margin-left: 170px;
+  margin-bottom: 50px;
+  color: grey;
+}
+
+.resetP:hover {
+  cursor: pointer;
+}
+
+#newP {
+  margin-right: 10px
+}
+
+.data-card {
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.auth-page .data-usage-info {
+  font-size: 14px;
+  color: dimgrey;
+}
+
+.auth-page #agreement {
+  margin-bottom: 25px;
+}

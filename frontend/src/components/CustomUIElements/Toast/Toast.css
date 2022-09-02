@@ -1,0 +1,25 @@
+/* Default notification styles */
+.default .progress-bar-design{
+  background: forestgreen !important;
+}
+
+.toast-design {
+  text-align: left;
+  color: black !important;
+}
+
+/* Test button style */
+.btn-wrapper {
+  text-align: center;
+}
+
+.toast button {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style according to type */
+.dark .toast-design {
+  color: white !important;
+}
