@@ -1,0 +1,9 @@
+.legal-page h1 {
+  text-align: center;
+  color: #4deb00;
+  font-weight: bold;
+}
+
+.legal-page .icons:hover, .icons:active {
+  color: forestgreen;
+}

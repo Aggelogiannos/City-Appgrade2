@@ -1,9 +1,12 @@
-import React, {Suspense} from "react";
-import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Route, Routes, } from "react-router-dom";
 import LoadingSpinner from "./components/CustomUIElements/LoadingSpinner/LoadingSpinner";
 import MainNavigation from "./components/Navigation/MainNavigation/MainNavigation";
-import {AuthContext} from "./context/auth-context";
-import {useAuth} from "./hooks/auth-hook";
+import { AuthContext } from "./context/auth-context";
+import { useAuth } from "./hooks/auth-hook";
+import {Legal} from "./components/Legal/Legal";
+import {PrivacyPolicy} from "./components/Legal/PrivacyPolicy";
+import {Terms} from "./components/Legal/Terms";
 
 
 const Auth = React.lazy(() => import("./components/Auth/Auth"));
@@ -17,6 +20,9 @@ const App = () => {
   routes = (
     <Routes>
       <Route path='/auth' exact element={<Auth />} />
+      <Route path='/legal' exact element={<Legal />} />
+      <Route path='/terms' exact element={<Terms />} />
+      <Route path='/privacy' exact element={<PrivacyPolicy />} />
       <Route path='*' element={<Auth />} />
     </Routes>
   );
@@ -34,7 +40,7 @@ const App = () => {
         email: email,
       }}>
       <Router>
-      <MainNavigation/>
+        <MainNavigation />
         <main>
           <Suspense
             fallback={
