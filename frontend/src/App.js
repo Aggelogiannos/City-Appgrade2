@@ -1,9 +1,14 @@
 import React, {Suspense} from "react";
 import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
 import LoadingSpinner from "./components/CustomUIElements/LoadingSpinner/LoadingSpinner";
+import MainNavigation from "./components/Navigation/MainNavigation/MainNavigation";
 import {AuthContext} from "./context/auth-context";
 import {useAuth} from "./hooks/auth-hook";
+
+
 const Auth = React.lazy(() => import("./components/Auth/Auth"));
+
+
 const App = () => {
   const { token, login, logout, userId, roles, email } = useAuth();
   let routes;
@@ -29,6 +34,7 @@ const App = () => {
         email: email,
       }}>
       <Router>
+      <MainNavigation/>
         <main>
           <Suspense
             fallback={
