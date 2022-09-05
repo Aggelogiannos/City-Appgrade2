@@ -7,6 +7,7 @@ import { useAuth } from "./hooks/auth-hook";
 import {Legal} from "./components/Legal/Legal";
 import {PrivacyPolicy} from "./components/Legal/PrivacyPolicy";
 import {Terms} from "./components/Legal/Terms";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 
 const Auth = React.lazy(() => import("./components/Auth/Auth"));
@@ -23,6 +24,7 @@ const App = () => {
       <Route path='/legal' exact element={<Legal />} />
       <Route path='/terms' exact element={<Terms />} />
       <Route path='/privacy' exact element={<PrivacyPolicy />} />
+      <Route path='/contact' exact element={<ContactUs/>}/>
       <Route path='*' element={<Auth />} />
     </Routes>
   );

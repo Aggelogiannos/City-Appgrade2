@@ -58,7 +58,7 @@ export function Legal() {
         <Col md={6} style={{...columnStyle, ...addSpaceStyle}} className="icons">
           <a href="/privacy" style={legalLink}>
             <Card>
-              <i className="bi bi-shield" style={iconStyles}></i>
+              <i className="bi bi-shield-x" style={iconStyles}></i>
               <br/>
               <p style={optionStyle}>Πολιτική Απορρήτου</p>
             </Card>

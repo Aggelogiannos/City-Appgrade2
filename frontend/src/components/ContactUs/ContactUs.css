@@ -1,0 +1,45 @@
+.contact-us h1 {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+.contact-us {
+  border: 10px black;
+}
+
+.card-container .bi {
+  font-size: 23px;
+  color: green;
+}
+
+.contact-us h1 {
+  text-align: center;
+}
+
+.contact-us li {
+  text-align: left;
+  color: green;
+}
+
+.contact-us a {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact-us .icon {
+  margin-right: 10px;
+}
+
+.contact-us .list {
+  list-style: none;
+}
+
+.contact-us .card-container {
+  padding: 150px 0 150px 0;
+}
+
+.contact-us a:hover, .contact-us a:active {
+  background-color: var(--darker-military-green);
+  color: white;
+}

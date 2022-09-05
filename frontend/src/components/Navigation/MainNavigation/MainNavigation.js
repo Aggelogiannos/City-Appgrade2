@@ -42,7 +42,7 @@ const MainNavigation = () => {
           <span className="group">
             {/* Logo and Landing Page Link */}
             <h1 className='main-navigation__title'>
-              <Link to='/'><span>City Appgrade</span></Link><i className="bi bi-tree"></i>
+              <Link to='/'><span>City Appgrade</span></Link>
             </h1>
             {/* User currently logged in */}
             {processedEmail &&
