@@ -1,17 +1,17 @@
-import { React, useRef } from 'react';
-import {createPortal} from 'react-dom';
+// import { React, useRef } from 'react';
+// import {createPortal} from 'react-dom';
 
-import './Backdrop.css';
+// import './Backdrop.css';
 
-const Backdrop = props => {
-  const containerRef = useRef();
+// const Backdrop = props => {
+//   const containerRef = useRef();
 
-  return (
-    createPortal(
-      <div className="backdrop" onClick={props.onClick}></div>,
-      containerRef.current
-    )
-  )
-};
+//   return (
+//     createPortal(
+//       <div className="backdrop" onClick={props.onClick}></div>,
+//       containerRef.current
+//     )
+//   )
+// };
 
-export default Backdrop;
+// export default Backdrop;

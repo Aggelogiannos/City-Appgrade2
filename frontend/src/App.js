@@ -11,7 +11,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 
 
 const Auth = React.lazy(() => import("./components/Auth/Auth"));
-
+const UserRequests = React.lazy(() => import("./components/Requests/UserRequests/UserRequests"));
 
 const App = () => {
   const { token, login, logout, userId, roles, email } = useAuth();
@@ -25,6 +25,7 @@ const App = () => {
       <Route path='/terms' exact element={<Terms />} />
       <Route path='/privacy' exact element={<PrivacyPolicy />} />
       <Route path='/contact' exact element={<ContactUs/>}/>
+      <Route path='/requests' exact element={<UserRequests/>}/>
       <Route path='*' element={<Auth />} />
     </Routes>
   );

@@ -1,0 +1,61 @@
+.request-item {
+  margin: 1rem 0;
+}
+
+.request-item__content {
+  padding: 0;
+}
+
+.request-item__info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.request-item__info h2,
+.request-item__info h3,
+.request-item__info p {
+  margin: 0 0 0.5rem 0;
+}
+
+.request-item__actions {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.request-item__modal-content {
+  padding: 0;
+}
+
+.request-item__modal-actions {
+  text-align: right;
+}
+
+.request-item__actions button,
+.request-item__actions a {
+  margin: 0.5rem;
+}
+
+.map-container {
+  height: 15rem;
+  width: 100%;
+}
+
+.reportIcon {
+  height: 20px;
+  width: 20px;
+}
+
+#notMandatoryMsg{
+	font-size: 15px;
+}
+
+.reportTitle{
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.reportDescription {
+  width: 100%;
+}
